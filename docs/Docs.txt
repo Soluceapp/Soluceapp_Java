@@ -1,0 +1,3 @@
+Welcome to soluceapp_java
+
+The main file is situated in src.com.soluceapp.shared  Soluceapp_JavaFX.java
