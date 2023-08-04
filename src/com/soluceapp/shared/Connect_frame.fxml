@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="norm_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="675.0" styleClass="parent" stylesheets="@application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.soluceapp.shared.Shared_controller">
+   <children>
+      <ImageView fitHeight="716.0" fitWidth="696.0" layoutX="-16.0" layoutY="-316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../resources/fond1.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="submitButton" layoutX="145.0" layoutY="281.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #7D3C98;" text="Valider" textFill="#fff6f6">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label layoutX="285.0" layoutY="81.0" prefHeight="74.0" prefWidth="156.0" text="Soluceapp" textAlignment="CENTER" textFill="#fffbfb">
+         <font>
+            <Font name="Comic Sans MS" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dutil_id" layoutX="318.0" layoutY="173.0" prefHeight="25.0" prefWidth="215.0" />
+      <PasswordField fx:id="mp_id" layoutX="318.0" layoutY="221.0" prefHeight="25.0" prefWidth="215.0" />
+      <Label layoutX="145.0" layoutY="170.0" prefHeight="30.0" prefWidth="180.0" text="Utilisateur (ou Mail)" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="216.0" prefHeight="30.0" prefWidth="146.0" text="Mot de passe" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="acceder3" layoutX="241.0" layoutY="281.0" mnemonicParsing="false" onAction="#acceder3" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #7D3C98;" text="Nouveau compte" textFill="#fff6f6">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <VBox alignment="CENTER" layoutX="577.0" prefHeight="74.0" prefWidth="104.0">
+         <children>
+            <Button fx:id="stopappli" mnemonicParsing="false" onAction="#stopappli_norm" prefHeight="36.0" prefWidth="51.0" style="-fx-background-color: #7D3C98;" text="X" textFill="#fff6f6">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+      <Button layoutX="387.0" layoutY="281.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="146.0" style="-fx-background-color: #7D3C98;" text="Modifier mot de passe" textFill="#fff6f6">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

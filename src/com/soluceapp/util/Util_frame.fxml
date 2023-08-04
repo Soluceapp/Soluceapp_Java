@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="util_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.soluceapp.util.Util_controller">
+   <children>
+      <ImageView fitHeight="728.0" fitWidth="711.0" layoutX="-1.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/fond1.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="-1.0" prefHeight="28.0" prefWidth="706.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="acceder1" mnemonicParsing="false" onAction="#acceder1" text="Se déconnecter" />
+                  <MenuItem fx:id="stopapplimenu" mnemonicParsing="false" onAction="#stopappli" text="Fermer" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Activité">
+               <items>
+                  <MenuItem fx:id="acceder4" mnemonicParsing="false" onAction="#acceder4" text="Fait le bilan" />
+                  <MenuItem fx:id="acceder5" mnemonicParsing="false" onAction="#acceder5" text="Avoir et escompte" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="69.0" prefHeight="74.0" prefWidth="321.0" text="Choisissez une activité" textAlignment="CENTER" textFill="#fffbfb">
+         <font>
+            <Font name="Comic Sans MS" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="stopappli1" layoutX="639.0" layoutY="39.0" mnemonicParsing="false" onAction="#stopappli" prefHeight="36.0" prefWidth="51.0" style="-fx-background-color: #7D3C98;" text="X" textFill="#fff6f6">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label layoutX="178.0" layoutY="304.0" text="Ton nombre de points est de :" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

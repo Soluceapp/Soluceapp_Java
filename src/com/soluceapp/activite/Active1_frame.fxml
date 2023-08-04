@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="active_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.soluceapp.activite.Active1_controller">
+   <children>
+      <ImageView fitHeight="728.0" fitWidth="711.0" layoutX="-1.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/fond1.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="-1.0" prefHeight="28.0" prefWidth="706.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="acceder2" mnemonicParsing="false" onAction="#acceder2" text="Vérifier mes points" />
+                  <MenuItem fx:id="acceder1" mnemonicParsing="false" onAction="#acceder1" text="Se déconnecter" />
+                  <MenuItem fx:id="stopapplimenu" mnemonicParsing="false" onAction="#stopappli" text="Fermer" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Activité">
+               <items>
+                  <MenuItem fx:id="acceder5" mnemonicParsing="false" onAction="#acceder5" text="Avoir et escompte" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="39.0" prefHeight="53.0" prefWidth="171.0" text="Fait le bilan" textAlignment="CENTER" textFill="#fffbfb">
+         <font>
+            <Font name="Comic Sans MS" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="stopappli1" layoutX="639.0" layoutY="39.0" mnemonicParsing="false" onAction="#stopappli" prefHeight="36.0" prefWidth="51.0" style="-fx-background-color: #7D3C98;" text="X" textFill="#fff6f6">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <TableView fx:id="table1" layoutX="65.0" layoutY="92.0" prefHeight="156.0" prefWidth="583.0">
+        <columns>
+            <TableColumn fx:id="c1" prefWidth="158.0" />
+          <TableColumn fx:id="c2" prefWidth="136.0" text="Actif" />
+          <TableColumn fx:id="c3" prefWidth="126.0" text="Passif" />
+            <TableColumn fx:id="c4" prefWidth="161.0" />
+        </columns>
+      </TableView>
+      <TableView fx:id="table2" layoutX="65.0" layoutY="255.0" prefHeight="156.0" prefWidth="583.0">
+         <columns>
+            <TableColumn fx:id="c5" prefWidth="158.0" />
+            <TableColumn fx:id="c6" prefWidth="136.0" text="Charges" />
+            <TableColumn fx:id="c7" prefWidth="126.0" text="Produits" />
+            <TableColumn fx:id="c8" prefWidth="162.0" />
+         </columns>
+      </TableView>
+      <TableView fx:id="table3" layoutX="61.0" layoutY="418.0" prefHeight="317.0" prefWidth="589.0">
+         <columns>
+            <TableColumn fx:id="c9" prefWidth="130.0" text="Compte" />
+            <TableColumn fx:id="c10" prefWidth="185.0" text="Libellé" />
+            <TableColumn fx:id="c11" prefWidth="125.0" text="Débit" />
+            <TableColumn fx:id="c12" prefWidth="141.0" text="Crédit" />
+         </columns>
+      </TableView>
+      <Label layoutX="270.0" layoutY="57.0" text="Quel est le montant à trouver ?" textFill="WHITE" />
+      <TextField layoutX="460.0" layoutY="53.0" />
+   </children>
+</AnchorPane>

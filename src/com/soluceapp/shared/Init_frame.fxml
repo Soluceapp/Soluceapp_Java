@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="init_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="803.0" styleClass="parent" stylesheets="@application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.soluceapp.shared.Shared_controller">
+   <children>
+      <Pane layoutX="29.0" layoutY="98.0" prefHeight="392.0" prefWidth="725.0" styleClass="pane" stylesheets="@application.css" />
+      <VBox alignment="CENTER" layoutX="273.0" layoutY="42.0" prefHeight="505.0" prefWidth="388.0" styleClass="white-pane" stylesheets="@application.css">
+         <children>
+            <Label alignment="CENTER" prefHeight="153.0" prefWidth="388.0" stylesheets="@application.css" text="Bienvenue sur Soluceapp" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+            <Button fx:id="acceder1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#acceder1" styleClass="trans-btn-white-border" stylesheets="@application.css" text="Se connecter" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="681.0" layoutY="39.0" prefHeight="53.0" prefWidth="80.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#stopappli_ini" prefHeight="30.0" prefWidth="55.0" style="-fx-background-color: #7D3C98;" text="X" textFill="#fff6f6">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
